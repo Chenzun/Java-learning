@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class gan
+{
+
+  public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		
+		int x;
+		int y;
+		int z;
+		int result;
+		
+		System.out.print("請輸入第一個數字");
+		x = input.nextInt();
+		
+		System.out.print("請輸入第二個數字");
+		y = input.nextInt();
+		
+		System.out.print("請輸入第三個數字");
+		z = input.nextInt();
+		
+		result = x * y * z;
+		System.out.printf("結果是 %d", result);
+		
+		
+	}
+	
+}
+
