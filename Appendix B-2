@@ -1,0 +1,13 @@
+
+public class GradeBookTest 
+{
+
+  public static void main( String[] args ) 
+	{
+		// 新增一個GradeBook物件並將它代入myGradeBook
+		GradeBook myGradeBook = new GradeBook();
+		
+		
+		myGradeBook.displayMessage();
+	}
+}
