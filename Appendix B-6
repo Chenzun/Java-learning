@@ -1,0 +1,23 @@
+import java.util.Scanner; //這個程式用到Scanner
+
+
+public class GradeBookTest 
+{
+
+  public static void main( String[] args ) 
+	{
+		Scanner input = new Scanner( System.in ); //創造Scanner來接收視窗中輸入的值
+		GradeBook myGradeBook = new GradeBook();
+		
+		System.out.printf( "最先的course name是%s\n\n", myGradeBook.getCourseName() );
+		
+		// prompt
+		System.out.println( "請輸入course name" );
+		String theName = input.nextLine();
+		myGradeBook.setCourseName( theName );
+		System.out.println();
+		
+		
+		myGradeBook.displayMessage();
+	}
+}
