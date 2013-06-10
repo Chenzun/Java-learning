@@ -1,0 +1,20 @@
+import java.util.Scanner; //這個程式用到Scanner
+
+
+public class GradeBookTest 
+{
+
+  public static void main( String[] args ) 
+	{
+		Scanner input = new Scanner( System.in ); //創造Scanner來接收視窗中輸入的值
+		GradeBook myGradeBook = new GradeBook();
+		
+		// prompt
+		System.out.println( "請輸入course name" );
+		String nameOfCourse = input.nextLine();
+		System.out.println();
+		
+		
+		myGradeBook.displayMessage(nameOfCourse);
+	}
+}
