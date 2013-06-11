@@ -1,0 +1,38 @@
+
+
+import java.util.Scanner;
+
+public class AccountTest 
+{
+  //開始執行
+	public static void main(String[] args) 
+	{
+		Account account1 = new Account( 50.00 );
+		Account account2 = new Account( -32.77 );
+		
+		System.out.printf( "account1 balance is :%.2f\n" , account1.getBalance() );
+		System.out.printf( "account2 balance is :%.2f\n\n", account2.getBalance() );
+		
+		Scanner input = new Scanner(System.in);
+		double depositAmount;
+		
+		System.out.print( "請輸入您要存入account1的金額\n" );
+		depositAmount = input.nextDouble();
+		System.out.printf( "系統目前將%.2f存入您的帳戶\n\n", depositAmount );
+		account1.credit( depositAmount );
+		
+		System.out.printf( "account1 balance is :%.2f\n" , account1.getBalance() );
+		System.out.printf( "account2 balance is :%.2f\n\n", account2.getBalance() );		
+				
+		System.out.print( "請輸入您要存入account2的金額\n" );
+		depositAmount = input.nextDouble();
+		System.out.printf( "系統目前將%.2f存入您的帳戶\n\n", depositAmount );
+		account2.credit( depositAmount );
+		
+		System.out.printf( "account1 balance is :%.2f\n" , account1.getBalance() );
+		System.out.printf( "account2 balance is :%.2f\n\n", account2.getBalance() );		
+		
+		
+	}
+
+}
