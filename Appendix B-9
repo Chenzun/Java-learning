@@ -1,0 +1,23 @@
+public class Account 
+{
+
+  private double balance;
+	
+	public Account ( double intialBalance )
+	{
+		//驗證戶頭裡面的錢是否大於0
+		//如果沒有，初始值顯示0
+		if ( intialBalance > 0.0 )
+			balance = intialBalance;
+	}
+	
+	public void credit ( double amount )
+	{
+		balance = balance + amount;
+	}
+	
+	public double getBalance()
+	{
+		return balance;
+	}
+}
