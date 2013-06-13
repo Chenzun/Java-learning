@@ -1,0 +1,15 @@
+
+public class GradeBookTest {
+
+  public static void main(String[] args) {
+		
+		GradeBook gradeBook1 = new GradeBook ("數位四甲");
+		
+		gradeBook1.displayMessage();
+		gradeBook1.Calculate();
+		
+		
+
+	}
+
+}
