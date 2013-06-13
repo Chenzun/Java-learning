@@ -1,0 +1,71 @@
+import java.util.Scanner;
+public class GradeBook {
+
+  private String courseName;
+	
+	public GradeBook( String name )
+	{
+		courseName = name;
+	}
+
+	public void setCourseName( String name )
+	{
+		courseName = name;
+	}
+	
+	public String getCourseName()
+	{
+		return courseName;
+	}
+	
+	public void displayMessage()
+	{
+		System.out.printf("您已進入%s的成績統計系統\n", getCourseName());
+	}
+	
+	public void Calculate()
+	{
+		
+		Scanner input = new Scanner( System.in );
+		
+		//定義數值
+		int total;
+		int grade;
+		int gradeCounter;
+		int average;
+		
+		//給數值初始值
+		total = 0;
+		gradeCounter = 1;
+		
+		while ( gradeCounter <= 10 )
+		{
+			System.out.println("請輸入成績");//提示
+			grade = input.nextInt();
+			total = total + grade;
+			gradeCounter = gradeCounter + 1;
+			
+		}//end while
+		
+		average = total / 10;
+		
+		System.out.printf("成績總和為%d\n", total);
+		System.out.printf("成績平均為%d\n", average);
+	}
+	
+}
+
+/*
+ *總和0，從1開始
+ *
+ * 當總數小於等於0
+ * 
+ * 提示使用者輸入數值
+ * 
+ * 將分數加進總數
+ * 總數+1
+ * 
+ * 將結果除以10 列印
+ * 
+ * */
+ 
